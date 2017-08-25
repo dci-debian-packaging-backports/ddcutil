@@ -1,0 +1,143 @@
+ddcutil (0.8.4-1) xenial; urgency=low
+
+  * Packaging changes to conform to Fedora distribution standards.
+
+  * Minor changes and bug fixes.
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Sat, 22 Jul 2017 05:01:00 -0400
+
+
+ddcutil (0.8.2-1) xenial; urgency=low
+
+  * The environment and interrogate commands report additional information.
+
+  * Minor performance improvement in detect.
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Wed, 17 May 2017 05:01:00 -0400
+
+ddcutil (0.8.1-1) xenial; urgency=low
+
+  * Fix segfault in message generation when a /dev/usb/hiddev device cannot
+    be opened.
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Sat, 06 May 2017 21:01:00 -0400
+
+
+ddcutil (0.8.0-6) unstable; urgency=low
+
+  * Bump Debian release for debian-mentors
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Mon, 01 May 2017 05:06:00 -0400
+
+ddcutil (0.8.0-5) unstable; urgency=low
+
+  * Bump Debian release for debian-mentors
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Mon, 01 May 2017 05:05:00 -0400
+
+ddcutil (0.8.0-4) unstable; urgency=low
+
+  * Bump Debian release because of failed debian-mentors upload
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Mon, 01 May 2017 05:04:00 -0400
+
+ddcutil (0.8.0-3) unstable; urgency=low
+
+  * Bump Debian release because of failed debian-mentors upload
+
+  * Changed xenial to unstable
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Mon, 01 May 2017 05:01:00 -0400
+
+ddcutil (0.8.0-2) xenial; urgency=low
+
+  * Bump Debian release because of failed debian-mentors upload
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Mon, 01 May 2017 05:00:00 -0400
+
+ddcutil (0.8.0-1) xenial; urgency=low
+
+  * If there are multiple monitors and option --async is specified, initial 
+    monitor checks are performed in separate threads to improve performance.
+
+  * If a monitor is specified by its I2C bus number (option --buso) and 
+    option --nodetect is also specified, then the initial scan for all
+    displays is skipped, improving performance.
+
+  * By default, setvcp and loadvcp now read the VCP value after it has been
+    set, to confirm that the monitor has made the change requested.
+
+  * Using the --terse option with getvcp causes output to be in a form that
+    is easily machine readable.
+
+  * Extensive changes to the C API.
+
+  * Minor bug fixes.
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Thu, 27 Apr 2017 05:00:00 -0400
+
+ddcutil (0.7.3-1) xenial; urgency=low
+
+  * Enhancements to commands "ddcutil detect --verbose" and 
+    "ddcutil environment --verbose"
+
+  * configure option --enable-drm controls whether libdrm is used to perform
+    addtitional checks in "ddcutil environment --verbose"
+
+  * Improved error messages
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Sun, 05 Mar 2017 05:00:00 -0400
+
+ddcutil (0.7.2-1) xenial; urgency=low
+
+  * Fix bug causing termination if a /dev/i2c-n device cannot be opened, 
+    e.g. because of permissions
+
+  * Minor enhancements to environment and interrogate commands
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Wed, 01 Feb 2017 05:00:00 -0400
+
+ddcutil (0.7.1-1) xenial; urgency=low
+
+  * Add command option --force-slave-address
+
+  * Fix segfault in output of --stats
+
+  * Autotools changes for supporting Python 3 API
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Wed, 27 Jan 2017 13:00:00 -0400
+
+ddcutil (0.7.0-1) xenial; urgency=low
+
+  * Introduce shared libraries
+
+  * ddcutil probe command
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Mon, 02 Jan 2017 20:00:00 -0400
+
+ddcutil (0.6.1-1) xenial; urgency=low
+
+  * Improve diagnostics for exceptional conditions 
+
+  * Extensive changes in preparation for C and Python APIs
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Sat, 19 Nov 2016 20:00:00 -0400
+
+ddcutil (0.6.0-1) xenial; urgency=low
+
+  *  Rename ddctool to ddcutil
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Sat, 24 Sep 2016 02:00:25 -0400
+
+ddcutil (0.5.0-1) xenial; urgency=low
+
+  * Extensive rework of support for USB connected monitors.
+    New command **ddctool usbenv** to explore USB environment..
+
+  * Remove assumption that I2C buses are numbered consecutively.
+    Needed for Raspberry Pi.
+
+  * Allow a display identifier to be specified on command **ddctool loadvcp**..
+    Addresses the situation where a monitor provides both DDC and USB interfaces.
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Fri, 9 Sep 2016 12:00:00 -0500

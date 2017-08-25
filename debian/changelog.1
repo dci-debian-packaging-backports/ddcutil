@@ -1,0 +1,25 @@
+ddcutil (0.5.2-1) xenail, urgency=low
+
+  * Rename ddtool to ddcutil 
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Sat, 24 Sep 2016 12:00:00 -0500
+
+ddcutil (0.5.1-1) xenial, urgency=low
+
+  * Improve diagnostics of **environment** and **interrogate** commands
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Fri, 23 Sep 2016 12:00:00 -0500
+
+ddcutil (0.5.0-1) xenial; urgency=low
+
+  * Extensive rework of support for USB connected monitors.
+    New command **ddctool usbenv** to explore USB environment..
+
+  * Remove assumption that I2C buses are numbered consecutively.
+    Needed for Raspberry Pi.
+
+  * Allow a display identifier to be specified on command **ddctool loadvcp**..
+    Addresses the situation where a monitor provides both DDC and USB 
+	interfaces.
+
+ -- Sanford Rockowitz <rockowitz@minsoft.com>  Fri, 9 Sep 2016 12:00:00 -0500
