@@ -75,7 +75,8 @@ Depends: ${misc:Depends},
          libglib2.0-0, 
          libudev-dev,
          libudev1,
-         libxrandr2
+         libxrandr2,
+         libddcutil0 (= ${binary:Version})
 Description: ddcutil - C development files
  These are the static libraries and development files for libddcutil.   
  .
